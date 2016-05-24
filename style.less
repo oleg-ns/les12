@@ -1,0 +1,46 @@
+@default_background: #e0e0e0;
+@default_color: #333;
+@default_font-size: 10px;
+@default_line-height: 20px;
+@default_padding: 2px 4px 2px 4px;
+.default {
+  background: @default_background;
+  color: @default_color;
+  font-size: @default_font-size;
+  line-height: @default_line-height;
+  padding: @default_padding;
+  &:active {
+  background: lighten(@default_background, 5%);
+    
+  }
+}
+@info_background: #3b83c0;
+@info_color: #fff;
+@info_font-size: 14px;
+@info_line-height: 20px;
+@info_padding: 6px 12px 6px 12px;
+.info {
+  background: @info_background;
+  color: @info_color;
+  font-size: @info_font-size;
+  line-height: @info_line-height;
+  padding: @info_padding;
+  &:active {
+  background: lighten(@info_background, 5%);
+    }
+}
+@secondary_background: #404245;
+@secondary_color: #fff;
+@secondary_font-size: 18px;
+@secondary_line-height: 20px;
+@secondary_padding: 10px 16px 10px 16px;
+.secondary {
+  background: @secondary_background;
+  color: @secondary_color;
+  font-size: @secondary_font-size;
+  line-height: @secondary_line-height;
+  padding: @secondary_padding;
+  &:active {
+  background: darken(@secondary_background, 20%);
+    }
+}
